@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "KidFit",
-  description: "Explore Health, Embrace Fun!",
+  description: "",
 };
 
 export default function RootLayout({
