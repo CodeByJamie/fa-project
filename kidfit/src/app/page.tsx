@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
 	return (
-		<div className="relative flex items-center justify-center min-h-screen min-w-screen">
+		<div className="relative flex items-center justify-center min-h-screen min-w-screen bg-zinc-900 bg-opacity-75">
 			<Image
 				src={'/gym.jpg'}
 				layout="fill"
