@@ -6,8 +6,10 @@ export default function about() {
     <div className="scroll-smooth relative">
       <Header />
         <div className="flex flex-col">
-          <section className="flex flex-row justify-between items-center h-full w-full py-11 px-20">
-            <div className="flex flex-col items-center text-justify gap-3 border-dashed border-2 border-emerald-500 p-4 rounded-lg">
+
+          <section className="flex flex-row justify-between items-center h-full w-full py-11 px-64">
+
+            <div className="flex flex-col items-center text-justify gap-3 border-dashed border-2 border-emerald-500 p-4 rounded-lg">  
               <div className="flex flex-row items-center gap-2">
                 <h1 className="lg:text-4xl text-3xl font-bold">Our Mission</h1>
                 <svg
@@ -40,7 +42,7 @@ export default function about() {
             />
           </section>
 
-          <section className="flex flex-row-reverse justify-between items-center px-24 py-11">
+          <section className="flex flex-row-reverse justify-between items-center px-64 py-11">
             <div className="flex flex-col items-center gap-3 lg:max-w-lg max-w-sm text-justify border-dashed border-2 border-rose-500 p-4 rounded-xl">
               <div className="flex flex-row items-center gap-2">
                 <h1 className="lg:text-4xl text-3xl font-bold">
