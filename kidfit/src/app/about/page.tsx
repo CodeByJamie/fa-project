@@ -5,6 +5,7 @@ export default function about() {
   return (
     <div className="scroll-smooth relative">
       <Header />
+      <div className="h-full w-1/2"></div>
         <div className="flex flex-col">
 
           <section className="flex flex-row justify-between items-center h-full w-full py-11 px-64">
@@ -78,8 +79,8 @@ export default function about() {
           </section>
         </div>
         {/* TODO: Add features */}
-        <section className="flex flex-col items-center text-justify gap-3 lg:max-w-lg max-w-sm">
-          <h1 className="text-zinc-900 lg:text-5xl text-4xl">Features</h1>
+        <section className="flex flex-col items-center text-justify gap-3">
+          <h1 className="text-zinc-900 lg:text-5xl text-4xl ">Features</h1>
           <span className="text-zinc-500">
             Reminder to add features when added the program
           </span>
