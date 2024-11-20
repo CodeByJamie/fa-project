@@ -10,6 +10,9 @@ const config: Config = {
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif']
+      },
+      colors: {
+        brandCol: '#f97316'
       }
     },
   },

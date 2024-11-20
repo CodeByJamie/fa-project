@@ -1,5 +1,7 @@
-import Header from "../components/header";
-import AboutCard from "../components/aboutCard";
+import Header from "../components/navigation/header";
+import AboutCard from "../components/cards/aboutCard";
+
+//TODO: import heroicons library instead of SVG'ing it
 
 export default function about() {
 	return (
