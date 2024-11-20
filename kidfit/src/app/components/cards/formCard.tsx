@@ -1,6 +1,4 @@
-import Link from "next/link";
-
-//TODO: Make this style of card dynamic (i.e Login & Register)
+import LoginButton from "../buttons/loginButton"
 
 export default function loginCard() {
     return (
@@ -14,7 +12,7 @@ export default function loginCard() {
                     Password
                     <input type="password" id="password" className="text-black rounded-lg bg-zinc-700 focus:outline-none p-1" />
                 </label>
-                <Link href="" className="bg-zinc-300 hover:bg-zinc-400 text-center p-1 rounded-lg w-1/2 transition-all duration-200 mt-3">Login</Link>
+                <LoginButton />
             </div>
     )
 }

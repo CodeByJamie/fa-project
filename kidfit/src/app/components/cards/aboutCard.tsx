@@ -1,4 +1,4 @@
-import { aboutProps } from "../../../lib/interfaces";
+import { aboutProps } from "../../../../lib/interfaces";
 
 export default function aboutCard({ title, icon, desc }: aboutProps) {
 	return (
