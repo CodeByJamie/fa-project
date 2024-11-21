@@ -9,7 +9,6 @@ export async function fetchData(search: { [key: string | number]: string | numbe
 	try {
 		// Get the database file path
 		const dbFilePath = path.join("./lib/database.json");
-		console.log(dbFilePath)
 
 		// Get the database file
 		databaseFile = fs.readFileSync(dbFilePath, "utf-8");

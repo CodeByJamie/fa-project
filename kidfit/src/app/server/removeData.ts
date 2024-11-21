@@ -8,7 +8,7 @@ export async function removeData(search: { [key: string | number]: string | numb
 
 	try {
 		// Get the database file path
-		const dbFilePath = path.join(__dirname, "../../../lib/database.json");
+		const dbFilePath = path.join("./lib/database.json");
 
 		// Get the database file
 		databaseFile = fs.readFileSync(dbFilePath, "utf-8");

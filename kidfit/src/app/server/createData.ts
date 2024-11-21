@@ -2,10 +2,7 @@
 import fs from "fs";
 import path from "path";
 
-export async function updateData(
-	search: { [key: string | number]: string | number },
-	newData: any
-) {
+export async function createData(newData: any) {
 	let databaseFile;
 	try {
 		// Get the database file path
@@ -29,24 +26,18 @@ export async function updateData(
 
 		// Parsing and filtering the databse file
 		const databaseData = JSON.parse(databaseFile as string);
-		const updateData = databaseData.map((item: any) => {
-			if (Object.keys(search).every((key) => item[key] === search[key])) {
-				return {
-					...item,
-					...newData,
-				};
-			}
-		});
+		databaseData.push(newData);
+
 		// Overwrite file data
 		fs.writeFileSync(
 			dbFilePath,
-			JSON.stringify(updateData, null, 2),
+			JSON.stringify(databaseData, null, 2),
 			"utf-8"
 		);
 		// Return a custom success message
 		return JSON.stringify({
 			success: true,
-			status: "Successfully updated data!",
+			status: "Successfully created data!",
 		});
 	} catch (error) {
 		console.error(`(updateData.ts):`);
@@ -55,7 +46,7 @@ export async function updateData(
 		// Return a custom error message
 		return JSON.stringify({
 			success: false,
-			status: "Failed to update data.",
+			status: "Failed to create data.",
 		});
 	}
 }
