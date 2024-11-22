@@ -1,9 +1,11 @@
-export interface aboutProps {
+type aboutProps = {
 	title: string;
-	icon: JSX.Element
+	icon: JSX.Element;
 	desc: string;
 }
 
-export interface errorProps {
+type errorProps = {
 	error: string;
 }
+
+export type { aboutProps, errorProps }
