@@ -8,4 +8,12 @@ type errorProps = {
 	error: string;
 };
 
-export type { aboutProps, errorProps };
+type cardProps = {
+	component: string & ("register" | "login");
+}
+
+export type { 
+	aboutProps, 
+	errorProps,
+	cardProps,
+ };
