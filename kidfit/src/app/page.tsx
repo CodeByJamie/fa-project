@@ -1,14 +1,14 @@
-import Image from "next/image";
+import * as Dependencies from '../../lib/dependencies'
 
 export default function Home() {
 	return (
 		<div className="relative flex items-center justify-center min-h-screen min-w-screen bg-zinc-900 bg-opacity-70">
-			<Image
+			<Dependencies.Next.Image
 				src={'/gym.jpg'}
 				layout="fill"
 				objectFit="cover"
 				alt="Background of a gym environment"
-				className="absolute -z-50 opacity-25"
+				className="absolute -z-50 opacity-30"
 			/>
 			<a href="/about" className="absolute bg-zinc-800 border-zinc-700 border-2 w-max bottom-4 right-4 mx-5 text-center font-poppins text-white hover:scale-95 font-semibold rounded-xl py-1 px-4 transition duration-300 cursor-pointer">Learn more</a>
 			<main className="relative mx-8 text-center">

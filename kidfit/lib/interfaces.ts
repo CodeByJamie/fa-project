@@ -1,14 +1,11 @@
-export interface aboutProps {
+type aboutProps = {
 	title: string;
 	icon: JSX.Element;
 	desc: string;
-}
+};
 
-export interface errorProps {
+type errorProps = {
 	error: string;
-}
+};
 
-export interface formProps {
-	button: JSX.Element;
-	updatedData: (data: { email: string; password: string }) => void;
-}
+export type { aboutProps, errorProps };
